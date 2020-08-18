@@ -1,0 +1,64 @@
+.AddStockForm {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    z-index: 300;
+    min-height: 350px;
+    position: fixed;
+    z-index: 500;
+    left: 10%;
+    top: 10%;
+    box-sizing: border-box;
+    width: 80%;
+    padding: 1em 2em;
+    overflow: auto;
+}
+
+.stockItem {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2em;
+    align-items: center;
+
+    p {
+        justify-self: self-start;
+    }
+
+    input {
+        width: 16vw;
+        justify-self: self-end;
+    }
+    .cpName {
+        justify-self: self-end;
+    }
+}
+
+.closeBtn {
+    width: 35px;
+    height: 25px;
+    align-self: flex-end;
+    position: absolute;
+    background-color: #e00;
+    border-radius: 5px;
+    border-width: 1px;
+    color: white;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #f00;
+    }
+}
+
+.AddButton {
+    width: 90px;
+    height: 35px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    border-width: 1px;
+    align-self: center;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #f9f9f9;
+    }
+}

@@ -1,0 +1,56 @@
+.AddStocks {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+
+    .secondaryHead {
+        align-self: flex-start;
+    }
+
+    #companyList {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        gap: 1.5em 2em;
+
+        li {
+            text-align: left;
+        }
+    }
+
+    .StockButton {
+        width: 90px;
+        height: 35px;
+        margin-right: 10px;
+        background-color: #f4f4f4;
+        border-radius: 5px;
+        border-width: 1px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #f9f9f9;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .companyName {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .AddStocks {
+        #companyList {
+            grid-template-columns: 1fr;
+        }
+    }
+    .companyName {
+        display: inline;
+    }
+}
